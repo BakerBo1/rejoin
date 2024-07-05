@@ -1,0 +1,11 @@
+-- Define the place ID of the game you want to rejoin
+local placeId = game.PlaceId
+
+-- Function to rejoin the game
+local function rejoinGame()
+    local TeleportService = game:GetService("TeleportService")
+    TeleportService:Teleport(placeId)
+end
+
+-- Automatically rejoin the game when the script is injected
+rejoinGame()
